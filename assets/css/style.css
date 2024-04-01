@@ -1,0 +1,96 @@
+:root {
+  --base-color: #ffffff;
+  --base-color-secondary: #f8f9fa;
+  --brand-color: #28a745;
+  --high-contrast-primary: #212529;
+  --high-contrast-secondary: #707070;
+  --low-contrast-primary: #dddddd;
+}
+
+
+/* 
+  
+  Modificaciones al CSS de Bootstrap
+  
+*/
+
+.btn-success {
+  background-color: var(--base-color-secondary);
+  border-color: var(--low-contrast-primary);
+  color: var(--high-contrast-primary);
+}
+
+.col {
+  max-width: 32rem;
+}
+
+.card {
+  border-color: var(--low-contrast-primary);
+}
+
+.form-control::placeholder {
+  color: var(--high-contrast-secondary);
+  font-weight: 300;
+}
+
+/* Necesario para deshabilitar tamaños de fuente responsivos de Bootstrap y
+mantener el logo centrado verticalmente */
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 25px;
+}
+
+
+/* 
+  
+  CSS Personalizado
+   
+*/
+
+body {
+  background-color: var(--base-color);
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+}
+
+i {
+  padding: 0 2px;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+  gap: 0.7rem;
+}
+
+.max-w-xl {
+  max-width: 1140px;
+}
+
+.brand-text {
+  color: var(--brand-color);
+}
+
+.brand-bg {
+  background-color: var(--brand-color);
+  color: var(--base-color);
+}
+
+.lc-primary {
+  color: var(--low-contrast-primary);
+}
+
+.hc-secondary {
+  color: var(--high-contrast-secondary);
+}
+
+.fs-small {
+  font-size: 0.8rem;
+}
